@@ -184,7 +184,7 @@ export default function InterviewPage() {
           clearQueue();
 
           // Disconnect socket
-          socket.disconnect();
+          socket?.disconnect();
 
           // Redirect to dashboard after 2 seconds
           setTimeout(() => {
