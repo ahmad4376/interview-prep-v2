@@ -38,6 +38,10 @@ export interface IQuestion extends Document {
     can_add_context: boolean;
     context_examples: string[];
   };
+
+  // Mongoose timestamps (added by { timestamps: true })
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const questionSchema = new Schema<IQuestion>(

@@ -83,6 +83,10 @@ export interface IInterview extends Document {
     focus_areas: string[];
     skipped_areas: string[];
   };
+
+  // Mongoose timestamps (added by { timestamps: true })
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const interviewSchema = new Schema<IInterview>(

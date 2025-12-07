@@ -124,17 +124,17 @@ export class HybridQuestionSelector {
 
     // Fetch candidates
     const candidates = orClauses.length > 0
-      ? await Question.find({ $or: orClauses }).limit(200).lean()
-      : await Question.find({}).sort({ 'rank_key.0': -1 }).limit(count).lean();
+      ? await Question.find({ $or: orClauses }).limit(200)
+      : await Question.find({}).sort({ 'rank_key.0': -1 }).limit(count);
 
     logger.info(`Fetched ${candidates.length} candidate questions`);
 
     // If no candidates found, fall back to all questions
     if (candidates.length === 0) {
       logger.info('No matches found, falling back to all questions');
-      const allQuestions = await Question.find({}).limit(count).lean();
+      const allQuestions = await Question.find({}).limit(count);
       logger.info(`Fallback fetched ${allQuestions.length} questions`);
-      return allQuestions as IQuestion[];
+      return allQuestions;
     }
 
     // Score candidates
@@ -161,7 +161,7 @@ export class HybridQuestionSelector {
       return (b.rankKey || 0) - (a.rankKey || 0);
     });
 
-    const results = scored.slice(0, count).map((s) => s.doc as IQuestion);
+    const results = scored.slice(0, count).map((s) => s.doc);
     logger.info(`Selected ${results.length} questions from databank`);
 
     return results;
