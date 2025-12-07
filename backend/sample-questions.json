@@ -1,0 +1,118 @@
+[
+  {
+    "question_id": 1,
+    "question_title": "Introduction",
+    "question_text": "Tell me briefly about yourself and your background.",
+    "question_tags": ["behavioral", "introduction"],
+    "difficulty": "easy",
+    "category": "behavioral",
+    "estimated_time": 45,
+    "expected_key_points": [
+      "Name and background",
+      "Current role or experience",
+      "Key skills",
+      "Interest in the position"
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Clear introduction", "weight": 25 },
+      { "criterion": "Relevant experience mentioned", "weight": 35 },
+      { "criterion": "Shows enthusiasm", "weight": 20 },
+      { "criterion": "Concise delivery", "weight": 20 }
+    ],
+    "rank_key": [100],
+    "view_count": 1000,
+    "score": 50
+  },
+  {
+    "question_id": 2,
+    "question_title": "What is React?",
+    "question_text": "Explain what React is in simple terms.",
+    "question_tags": ["react", "javascript", "frontend", "technical"],
+    "difficulty": "easy",
+    "category": "technical",
+    "estimated_time": 30,
+    "expected_key_points": [
+      "JavaScript library",
+      "Building user interfaces",
+      "Component-based",
+      "Created by Facebook/Meta"
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Defines React correctly", "weight": 40 },
+      { "criterion": "Mentions components", "weight": 30 },
+      { "criterion": "Clear explanation", "weight": 30 }
+    ],
+    "rank_key": [95],
+    "view_count": 5000,
+    "score": 100
+  },
+  {
+    "question_id": 3,
+    "question_title": "JavaScript Variables",
+    "question_text": "What's the difference between var, let, and const in JavaScript?",
+    "question_tags": ["javascript", "variables", "es6", "technical"],
+    "difficulty": "easy",
+    "category": "technical",
+    "estimated_time": 40,
+    "expected_key_points": [
+      "var is function-scoped",
+      "let and const are block-scoped",
+      "const cannot be reassigned",
+      "let can be reassigned"
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Explains scope differences", "weight": 40 },
+      { "criterion": "Mentions reassignment", "weight": 30 },
+      { "criterion": "Provides examples", "weight": 30 }
+    ],
+    "rank_key": [90],
+    "view_count": 3000,
+    "score": 80
+  },
+  {
+    "question_id": 4,
+    "question_title": "CSS Flexbox Basics",
+    "question_text": "What is Flexbox and when would you use it?",
+    "question_tags": ["css", "flexbox", "layout", "frontend"],
+    "difficulty": "easy",
+    "category": "technical",
+    "estimated_time": 35,
+    "expected_key_points": [
+      "CSS layout model",
+      "One-dimensional layout",
+      "Flexible containers",
+      "Align and distribute items"
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Defines Flexbox", "weight": 35 },
+      { "criterion": "Mentions use cases", "weight": 35 },
+      { "criterion": "Clear explanation", "weight": 30 }
+    ],
+    "rank_key": [85],
+    "view_count": 2000,
+    "score": 70
+  },
+  {
+    "question_id": 5,
+    "question_title": "Git Basics",
+    "question_text": "Explain what Git is and why we use it.",
+    "question_tags": ["git", "version-control", "tools"],
+    "difficulty": "easy",
+    "category": "technical",
+    "estimated_time": 30,
+    "expected_key_points": [
+      "Version control system",
+      "Track code changes",
+      "Collaboration",
+      "History and rollback"
+    ],
+    "evaluation_criteria": [
+      { "criterion": "Defines version control", "weight": 35 },
+      { "criterion": "Mentions collaboration", "weight": 30 },
+      { "criterion": "Clear explanation", "weight": 35 }
+    ],
+    "rank_key": [80],
+    "view_count": 1500,
+    "score": 60
+  }
+]
