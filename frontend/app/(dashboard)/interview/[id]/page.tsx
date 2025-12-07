@@ -129,7 +129,7 @@ export default function InterviewPage() {
         const token = await getToken();
         if (!mounted) return;
 
-        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000';
+        const backendUrl = process.env.NEXT_PUBLIC_WS_URL || 'http://localhost:8000';
 
         socket = io(backendUrl, {
           auth: {
